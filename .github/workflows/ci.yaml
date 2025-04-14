@@ -35,7 +35,7 @@ jobs:
   assets:
     strategy:
       matrix:
-        platform: [ubuntu-latest, windows-latest]
+        platform: [ubuntu-latest, windows-latest, linux/arm64]
     runs-on: ${{ matrix.platform }}
     needs: release
     steps:
